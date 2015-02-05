@@ -1,0 +1,187 @@
+ul.tabs {
+	list-style: none;
+	margin: 0px;
+	padding-bottom: 2px;
+	padding-left: 3px;
+	padding-right: 0px;
+	padding-top: 5px;
+	float: left;
+	height: 60px;
+	border-bottom: 1px solid #999;
+	border-left: 1px solid #999;
+	width: 99.5%;
+	-ms-filter:
+		"progid:DXImageTransform.Microsoft.gradient(startColorstr=#06345C, endColorstr=#1087ef)";
+	/*Como sabemos o IE é sempre o problema dos desenvolvedores. Para utilizar um efeito Gradiente do Css3 no IE é necessário acrescentar esta linha*/
+	-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#06345C,
+		endColorstr=#1087ef );
+	/*IE 5.5 - 7  ------ Esta linha faz com que o efeito gradiente do Css3 funciona em versões antigas do IE*/
+	background: -moz-linear-gradient(top, #06345C, #1087ef) repeat-X;
+	background: -webkit-gradient(linear, left top, left bottom, from(#06345C),
+		to(#1087ef) ) repeat-X;
+}
+ 
+ul.tabs li {
+	border-radius:5px 5px 0 0; 
+	float: right;
+	margin: 1px;
+	padding: 0px;
+	height: 32px;
+	margin-top: 30px;
+	line-height: 31px;
+	border: 1px solid #fff;
+	border-bottom: none;
+	/*border-left: none;*/
+	margin-bottom: -1px;
+	overflow: hidden;
+	position: relative;
+}
+ 
+ul.tabs li a {
+	text-decoration: none;
+	color: White;
+	font: bold;
+	display: block;
+	font-size: 1.2em;
+	font-family: Times New Roman;
+	padding: 0 20px;
+	/*border: 1px solid #fff;*/
+	outline: none;
+}
+ 
+ul.tabs li.active a
+	/*Deixa a cor da fonte laranja assim que aba se torna ativa*/ {
+	color: #06345c;
+}
+ 
+ul.tabs li a:hover {
+	background: #1087ef;
+	color: #06345c;
+}
+ 
+html ul.tabs li.active {
+	color: #E68A00;
+	background: #fff;
+	/* a aba aparece com o fundo branco quando selecionada*/
+	border-bottom: 1px solid #fff;
+	/*--faz a aba ativa parecer conectada com seu conteudo--*/
+}
+ 
+html ul.tabs li.active a:hover
+	/*--Faz a lista ativa nao obedecer as propriedades do hover--*/ {
+	color: #1087ef;
+	background: #fff;
+	border-bottom: 1px solid #fff;
+}
+ 
+.tab_container {
+	border-top: none;
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+	background: #fff;
+}
+ 
+ .cont_tab li{
+ 	list-style: none;
+ }
+.cont_tab {
+	padding: 25px;
+	font-size: 1.2em;
+	border-top-width: 0px;
+	border: 1px solid;
+}
+ 
+fieldset {
+	width: 96%;
+
+}
+ 
+#btnInserir {
+	width: 100%
+}
+
+.cont_tab {
+padding:10px;
+padding-bottom:12px; /* Height of the footer element */
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 100px; /* bottom = footer height */
+}
+#footer {
+    /*position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 130px;
+    width: 100%;*/
+    margin-top: 10px;
+    text-align: center;
+}
+
+#wrapper {
+    background: none repeat scroll 0 0 #ffffff;
+    border: 1px solid grey;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: left;
+    width: 804px;
+}
+
+label{
+	display: block;
+}
+
+h1{
+	float: left;
+	margin-top: -2px;
+	margin-bottom: 2px;
+	padding-left: 3px;
+	height: 100%;
+	color: #fff;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+h1 a{
+
+	color: #fff;	
+}
+
+div.cont_tab p {
+    margin-top: 0;
+}
+
+div.cont_tab h2 {
+    margin-bottom: 0;
+}
+
+div.cont_tab ul {
+    padding: 0;
+    margin-top: 0;
+}
+
+
+/*Read more*/
+.comment {
+	width: 400px;
+	/*background-color: #f0f0f0;*/
+	margin: 10px;
+}
+a.morelink {
+	color:blue;
+	text-decoration:none;
+	outline: none;
+}
+.morecontent span {
+	display: none;
+
+}
+/*Read more*/
