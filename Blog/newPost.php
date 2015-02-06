@@ -4,7 +4,7 @@
 
   define('ADMIN_LOGIN','blogadmin');
 
-  define('ADMIN_PASSWORD','blogRRC!');
+  define('ADMIN_PASSWORD','admin');
 
   if (!isset($_SERVER['PHP_AUTH_USER']) || !isset($_SERVER['PHP_AUTH_PW'])
 
@@ -46,15 +46,13 @@
 ?>
 
 	<div class="cont_tab" id="NewPost">
-		<fieldset><legend>New Post</legend>
+		<h2>New Post</h2>
 
 			<form action="insertPost.php" method="POST">
-			  <p><label for="title">Post Title: </label>
-			  <input type="text" name="title" size="60" required></p>
-			  <p><label for="title">Author: </label>
-			  <input type="text" name="author" size="30" required></p>
-			  <p><textarea rows="4" cols="50" id="post" name="post" required placeholder="Type your Post here..."></textarea></p>
-			  <input type="submit" value="Create">
+			  <input type="text" name="title" size="60" placeholder="Post Title" required></p>
+			  <input type="text" name="author" size="30" placeholder="Author" required></p>
+			  <textarea rows="4" cols="50" id="post" name="post" required placeholder="Type your Post here..."></textarea>
+			  <button type="submit">Create</button>
 			</form>
 
 		</fieldset>

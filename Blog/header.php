@@ -29,15 +29,16 @@
 </head>
 <body>
 	<div id="wrapper">
-		<header>
+		<header class="mainHeader">
 			<nav>
+				<h1><a href="index.php"><img src="rrc_logo.png" width="215" height="60"></a></h1>
 				<ul class="tabs">
-					<h1><a href="index.php"><img src="rrc_logo.png" width="215" height="60"></a></h1>
-					<li <?= ($g_page == 'newPost') ? "class='active'" : '' ?>><a href="newPost.php" id="#NewPost">New Post</a></li>
-					<li <?= ($g_page == 'archive') ? "class='active'" : '' ?>><a href="archive.php" id="#Arquive" >Archive</a></li>
 					<li <?= ($g_page == 'index') ? "class='active'" : '' ?>><a href="index.php" id="#Home">Home</a></li>
+					<li <?= ($g_page == 'archive') ? "class='active'" : '' ?>><a href="archive.php" id="#Arquive" >Archive</a></li>
+					<li <?= ($g_page == 'newPost') ? "class='active'" : '' ?>><a href="newPost.php" id="#NewPost">New Post</a></li>
+					
 					<!-- <li><a href="#Delete">Deletar</a></li> -->
 				</ul>
 			</nav>
 		</header>
-		<div class="tab_container">
+		<div class="container">

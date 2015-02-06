@@ -22,13 +22,10 @@
 	<?php require("header.php"); ?>
 
 		<div class="cont_tab" id="Archive">
-			<fieldset><legend>Full Post</legend>
-		     <li>
-		     	<h2><?=$row['title']?></h2>
-				   <p><small><?=$row['postDate']?> <a href="editpost.php?id=<?=$row['id']?>">edit</a></small></p>
-				   <p><?=$row['posttext']?></li></p>  
-		    	</li>
-		    </fieldset>
+			<h2>Full Post</h2>
+		     	<h3><?=$row['title']?></h3>
+			    <p><small><?=$row['postDate']?> <a href="editpost.php?id=<?=$row['id']?>">edit</a></small></p>
+			    <p class="text"><?=$row['posttext']?></li></p>  
 	    </div>
 <?php endwhile ?>
 

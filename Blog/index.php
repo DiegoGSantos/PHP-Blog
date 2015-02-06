@@ -12,7 +12,7 @@ $i = 0;
 ?>
 
 <div class="cont_tab" id="Home">
-	<fieldset><legend>Newly Posts</legend>
+	<h2>Newly Posts</h2>
 
 		<ul id="main">
 		<?php if ($num_of_nows != 0):?>
@@ -24,7 +24,7 @@ $i = 0;
 			   <?php $date=strtotime($row['postDate'])?>
 
 			   <li>
-		       		<h2><a href="fullpost.php?id=<?=$row['id']?>"><?=$row['title']?></a></h2>
+		       		<h3><a href="fullpost.php?id=<?=$row['id']?>"><?=$row['title']?></a></h3>
 		   		    <p>
 			   		    <small>
 							<?=date('F d, Y, H:i:s', $date)?> - <a href="fullpost.php?id=<?=$row['id']?>">view</a> -
@@ -32,7 +32,7 @@ $i = 0;
 			   		    </small>
 		   		    </p>
 		   		    <p hidden id="current"><?=$row['id']?></p>
-		   		    <div class="comment more">
+		   		    <div class="comment more text">
 						<?=$row['posttext']?>
 					</div>
 
@@ -46,7 +46,6 @@ $i = 0;
 		<?php endif;?>
 		</ul>
 
-			</fieldset>
 		</div>
 
 <?php

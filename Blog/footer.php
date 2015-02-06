@@ -2,7 +2,7 @@
 
 </div>
 		<div id="footer">
-			<p>Copyright 2014 - No rights reserved</p>
+			<p>Copyright 2015 - No rights reserved</p>
 		</div>
 </div>
 </body>

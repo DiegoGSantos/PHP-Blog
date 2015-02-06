@@ -9,7 +9,7 @@
 	
 ?>
 	<div class="cont_tab" id="Archive">
-		<fieldset><legend>Archive</legend>
+		<h2>Archive</h2>
 			<ul>
 		     	<?php if($num_of_nows != 0): ?>
 
@@ -18,7 +18,7 @@
 		          	   <?php $date=strtotime($row['postDate'])?>
 
 		               <li>
-		               		<h2><a href="fullpost.php?id=<?=$row['id']?>"><?=$row['title']?></a></h2>
+		               		<h3><a href="fullpost.php?id=<?=$row['id']?>"><?=$row['title']?></a></h3>
 		           		    <p><small>
 		           		    	<?=date('F d, Y, H:i:s', $date)?> <a href="fullpost.php?id=<?=$row['id']?>">view</a> - 
 		           		    	<a href="editpost.php?id=<?=$row['id']?>">edit</a>
